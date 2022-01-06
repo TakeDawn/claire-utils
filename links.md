@@ -3,3 +3,6 @@ https://necolas.github.io/normalize.css/
 
 Software
 https://www.sublimetext.com/download
+
+Lorem Ipsum Generator
+https://www.lipsum.com/
