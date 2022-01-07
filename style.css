@@ -1,3 +1,4 @@
+
 /* --- NORMALIZE.CSS --- */
 
 html {
@@ -180,4 +181,116 @@ template {
 
 [hidden] {
     display: none;
+}
+
+/* ---  UTILS --- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---  HEADER --- */
+
+#demo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid blue;
+    height: 20%;
+}
+
+#header-menu {
+    width: 100%;
+}
+
+#header-menu ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu-link {
+    /*display: flex;*/
+    width: 20%;
+    text-align: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.header-menu-link:last-child {
+    border-right: 1px solid black;
+}
+
+.header-menu-link a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.header-menu-link:hover {
+    background-color: lightgrey;
+}
+
+/* ---  MAIN --- */
+
+#demo-main {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+#demo-main-intro {
+    height: 20%;
+    width: 100%;
+    border: 1px solid yellow;
+    text-align: center;
+}
+
+#demo-main-infos {
+    display: flex;
+    height: 80%;
+}
+
+.demo-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+#demo-main-infos .demo-main-container:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+.avatar {
+    border: 1px solid red;
+    background-color: #da4a65;
+    height: 25%;
+    width: 25%;
+    align-self: center;
+    border-radius: 50%;
+}
+
+/* ---  FOOTER --- */
+
+#demo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    height: 10%;
+}
+
+#demo-footer p {
+    font-size: 50px;
 }
